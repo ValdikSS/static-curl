@@ -546,7 +546,7 @@ compile_tls() {
         enable-tls1_3 \
         enable-ssl3 enable-ssl3-method \
         enable-des enable-rc4 \
-        enable-weak-ssl-ciphers \
+        enable-weak-ssl-ciphers no-hw-padlock \
         --static -static;
 
     make -j "$(nproc)";
